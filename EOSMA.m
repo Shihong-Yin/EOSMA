@@ -1,4 +1,4 @@
-%% ********************** EOSMA final code ***********************
+%% **************************** EOSMA *****************************
 % Algorithm disadvantages:
 % 1. The algorithm parameters cannot be adaptively selected, 
 %    and the selection of parameter z=0.6 depends on the problem solved
@@ -12,11 +12,11 @@
 % 2. The principle is simple and easy to implement, no archiving mechanism, 
 %    low space and time complexity
 % 3. Strike a better balance between exploration and exploitation
-%% ***************************************************************
-% Author: Yin, Shihong, Qifang Luo, and Yongquan Zhou. 
+%% ****************************************************************
+% Author: Shihong Yin, Qifang Luo, and Yongquan Zhou. 
 % "EOSMA: An Equilibrium Optimizer Slime Mould Algorithm for Engineering Design Problems."
 % Arabian Journal for Science and Engineering (2022): 1-32.
-%% ***************************************************************
+%% ****************************************************************
 function [Destination_fitness,bestPositions,Convergence_curve]=EOSMA(PopSize,MaxNfes,lb,ub,dim,func_num)
 rand('seed', sum(100 * clock));
 
