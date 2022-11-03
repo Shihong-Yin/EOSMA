@@ -33,7 +33,7 @@ Ceq2 = zeros(1,dim);  Ceq2_fit = inf;
 Ceq3 = zeros(1,dim);  Ceq3_fit = inf;
 Ceq4 = zeros(1,dim);  Ceq4_fit = inf;
 Xold = X;  Xold_fit = Fitness;
-Convergence_curve=zeros(1,Max_iter);
+Convergence_curve = zeros(1,Max_iter);
 % Main loop
 for it = 1:Max_iter
     % Check the boundary and calculate the fitness
